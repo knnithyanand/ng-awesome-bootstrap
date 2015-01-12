@@ -1,0 +1,35 @@
+{
+	"name": "ng-awesome-bootstrap",
+	"version": "0.0.1",
+	"authors": [
+    "Nithyanand K N <knnithyanand@hotmail.com>"
+  ],
+	"description": "Develop responsive, mobile first projects using Bootstrap and Font Awesome. Minimal Bootstrap LESS with Font Awesome instead of Glyphicons.",
+	"keywords": [
+    "awesome",
+    "bootstrap",
+    "css",
+    "first",
+    "font",
+    "fontawesome",
+    "framework",
+    "front-end",
+    "javascript",
+    "js",
+    "less",
+    "mobile",
+    "mobile-first",
+    "responsive",
+    "web"
+  ],
+	"license": "MIT",
+	"ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "*.md"
+  ]
+}
