@@ -7,7 +7,12 @@
 	"description": "Develop responsive, mobile first projects using Bootstrap and Font Awesome. Minimal Bootstrap LESS with Font Awesome instead of Glyphicons.",
 	"main": [
 		"dist/styles/ng-awesome-bootstrap.min.css",
-		"dist/scripts/ng-awesome-bootstrap.min.js"
+		"dist/scripts/ng-awesome-bootstrap.min.js",
+		"dist/fonts/fontawesome-webfont.eot",
+		"dist/fonts/fontawesome-webfont.svg",
+		"dist/fonts/fontawesome-webfont.ttf",
+		"dist/fonts/fontawesome-webfont.woff",
+		"dist/fonts/FontAwesome.otf"
 	],
 	"keywords": [
     "awesome",
