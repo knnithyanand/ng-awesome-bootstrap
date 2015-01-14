@@ -7703,3 +7703,48 @@ button.close {
 .form-group.ng-dirty.ng-valid .form-control-feedback {
   color: #3c763d;
 }
+.form-group.ng-pristine.ng-invalid .feedback-btn {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.form-group.ng-pristine.ng-invalid .feedback-btn:hover,
+.form-group.ng-pristine.ng-invalid .feedback-btn:focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn.focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn:active,
+.form-group.ng-pristine.ng-invalid .feedback-btn.active,
+.open > .dropdown-toggle.form-group.ng-pristine.ng-invalid .feedback-btn {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.form-group.ng-pristine.ng-invalid .feedback-btn:active,
+.form-group.ng-pristine.ng-invalid .feedback-btn.active,
+.open > .dropdown-toggle.form-group.ng-pristine.ng-invalid .feedback-btn {
+  background-image: none;
+}
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled],
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn,
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled:hover,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled]:hover,
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn:hover,
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled:focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled]:focus,
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn:focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled.focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled].focus,
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn.focus,
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled:active,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled]:active,
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn:active,
+.form-group.ng-pristine.ng-invalid .feedback-btn.disabled.active,
+.form-group.ng-pristine.ng-invalid .feedback-btn[disabled].active,
+fieldset[disabled] .form-group.ng-pristine.ng-invalid .feedback-btn.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.form-group.ng-pristine.ng-invalid .feedback-btn .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
