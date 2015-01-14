@@ -36,7 +36,8 @@
 		"url": "git://github.com/knnithyanand/ng-awesome-bootstrap.git"
 	},
 	"dependencies": {
-		"jquery": ">= 1.9.1"
+		"jquery": ">= 1.9.1",
+		"moment": ">=2.8.0"
 	},
 	"license": "MIT",
 	"ignore": [
