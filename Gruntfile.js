@@ -22,14 +22,11 @@ module.exports = function (grunt) {
 		watch: {
 			js: {
 				files: ['src/scripts/{,*/}*.js'],
-				tasks: ['newer:jshint:all'],
-				options: {
-
-				}
+				tasks: ['build']
 			},
 			less: {
 				files: ['src/styles/{,*/}*.less'],
-				tasks: ['less']
+				tasks: ['build']
 			},
 			gruntfile: {
 				files: ['Gruntfile.js']
@@ -47,7 +44,9 @@ module.exports = function (grunt) {
 				},
 				files: {
 					// compilation.css : source.less
-					"dist/styles/ng-awesome-bootstrap.css": "src/styles/ng-awesome-bootstrap.less"
+					"dist/styles/ng-awesome-bootstrap.css": [
+						"src/styles/ng-awesome-bootstrap.less"
+					]
 				}
 			}
 		},
@@ -98,7 +97,7 @@ module.exports = function (grunt) {
 
 		// Copies remaining files to places other tasks can use
 		copy: {
-			dist: {
+			fonts: {
 				files: [{
 					expand: true,
 					dot: true,
@@ -107,7 +106,18 @@ module.exports = function (grunt) {
 					src: [
 					'fonts/{,*/}*.*'
 					]
-					}]
+				}]
+			},
+			test: {
+				files: [{
+					expand: true,
+					dot: true,
+					cwd: 'dist',
+					dest: '../AngApp01/bower_components/ng-awesome-bootstrap/dist',
+					src: [
+					'{,*/}*.*'
+					]
+				}]
 			}
 		}
 	});
@@ -115,14 +125,16 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('build', [
 		'clean:dist',
-		'copy',
 		'less',
 		'cssmin',
-		'uglify'
+		'uglify',
+		'copy:fonts',
+		'copy:test'
 		]);
 
 	grunt.registerTask('default', [
-		'build'
+	'build',
+		'watch'
 		]);
 
 };

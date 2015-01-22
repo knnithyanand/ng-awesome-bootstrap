@@ -1,12 +1,106 @@
+// Required Indicator
+.form-group.ng-pristine.ng-invalid-required {
+  .req-indicator-btn {
+    display: block;
+    .req-indicator-icon:before {
+      .text-danger;
+      content: @fa-var-asterisk;
+    }
+  }
+}
+// Required Indicator
+.form-group.ng-pristine.ng-valid-required {
+  .req-indicator-btn {
+    display: block;
+    .req-indicator-icon:before {
+      .text-muted;
+      content: @fa-var-asterisk;
+    }
+  }
+}
+// Required Indicator
+.form-group.ng-dirty.ng-invalid-required {
+  .req-indicator-btn {
+    display: block;
+    .req-indicator-icon:before {
+      .text-danger;
+      content: @fa-var-asterisk;
+    }
+  }
+}
+// Required Indicator
+.form-group.ng-dirty.ng-valid-required {
+  .req-indicator-btn {
+    display: block;
+    .req-indicator-icon:before {
+      .text-muted;
+      content: @fa-var-asterisk;
+    }
+  }
+}
+// Validation Feedback Section
+.feedback-btn,
+.feedback-btn-o {
+  width: 2em;
+}
+// PRISTINE + INVALID
 .form-group.ng-pristine.ng-invalid {
   .has-warning;
+  .feedback-btn {
+    .btn-warning;
+    display: block;
+    .feedback-icon:before {
+      content: @fa-var-exclamation;
+    }
+  }
+  .feedback-btn-o {
+    display: block;
+    .feedback-icon:before {
+      .text-warning;
+      content: @fa-var-exclamation;
+    }
+  }
 }
+// PRISTINE + VALID
+.form-group.ng-pristine.ng-valid {
+  .feedback-btn,
+  .feedback-btn-o {
+    display: none;
+  }
+}
+// DIRTY + INVALID
 .form-group.ng-dirty.ng-invalid {
   .has-error;
+  .feedback-btn {
+    .btn-danger;
+    display: block;
+    .feedback-icon:before {
+      content: @fa-var-times;
+    }
+  }
+  .feedback-btn-o {
+    display: block;
+    .feedback-icon:before {
+      .text-danger;
+      content: @fa-var-times;
+    }
+  }
 }
+// DIRTY + VALID
 .form-group.ng-dirty.ng-valid {
   .has-success;
-}
-.form-group.ng-pristine.ng-invalid .feedback-btn {
-  .btn-danger;
+  .feedback-btn {
+    .btn-success;
+    display: block;
+    .feedback-icon:before {
+      content: @fa-var-check;
+    }
+  }
+  .feedback-btn-o {
+    display: block;
+    .feedback-icon:before {
+      .text-success;
+      content: @fa-var-check;
+    }
+  }
 }
