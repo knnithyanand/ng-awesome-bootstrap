@@ -490,6 +490,7 @@
 				if (e.type === 'dp.change' && ((e.date && e.date.isSame(e.oldDate)) || (!e.date && !e.oldDate))) {
 					return;
 				}
+
 				element.trigger(e);
 			},
 
@@ -819,7 +820,6 @@
 
 			setValue = function (targetMoment) {
 				var oldDate = unset ? null : date;
-
 				// case of calling setValue(null or false)
 				if (!targetMoment) {
 					unset = true;
@@ -852,7 +852,8 @@
 					notifyEvent({
 						type: 'dp.change',
 						date: date.clone(),
-						oldDate: oldDate
+						oldDate: oldDate,
+						formated: date.format(actualFormat)
 					});
 				} else {
 					input.val(unset ? '' : date.format(actualFormat));

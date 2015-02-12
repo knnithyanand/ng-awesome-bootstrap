@@ -44,7 +44,7 @@
   width: 2em;
 }
 // PRISTINE + INVALID
-.form-group.ng-pristine.ng-invalid {
+.form-group.ng-pristine.ng-invalid:not(.ng-invalid-required) {
   .has-warning;
   .feedback-btn {
     .btn-warning;
@@ -69,7 +69,7 @@
   }
 }
 // DIRTY + INVALID
-.form-group.ng-dirty.ng-invalid {
+.form-group.ng-dirty.ng-invalid:not(.ng-invalid-required) {
   .has-error;
   .feedback-btn {
     .btn-danger;
